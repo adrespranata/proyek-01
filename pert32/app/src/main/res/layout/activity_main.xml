@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:id="@+id/activity_main"
+    android:background="@drawable/cyber">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:text="TEKNIK INFORMATIKA" />
+
+
+    <TableLayout
+        android:id="@+id/form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="87dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimary"
+                android:text="Nama "/>
+
+            <EditText
+                android:id="@+id/isinama"
+                android:layout_width="317dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimary"
+                android:text="No HP "/>
+
+            <EditText
+                android:id="@+id/isinohp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:textColor="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimary"
+                android:text="Alamat " />
+
+            <EditText
+                android:id="@+id/isialamat"
+                android:layout_width="248dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mp"
+        android:padding="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Metode Pembayaran :"
+            android:textColor="@color/colorPrimary"/>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/rdb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:buttonTint="@color/colorPrimary"
+                android:text="Cash"/>
+
+            <RadioButton
+                android:id="@+id/rdb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:buttonTint="@color/colorPrimary"
+                android:text="CreditCard"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/rdb3"
+                android:layout_width="186dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:buttonTint="@color/colorPrimary"
+                android:text="Cicil"/>
+
+            <RadioButton
+                android:id="@+id/rdb4"
+                android:layout_width="255dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:buttonTint="@color/colorPrimary"
+                android:text="Transfer"/>
+        </TableRow>
+
+    </TableLayout>
+
+
+    <TableLayout
+        android:id="@+id/pi"
+        android:layout_width="match_parent"
+        android:layout_height="176dp"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:text="Pilih Item : "
+            android:textColor="@color/colorPrimary"
+            />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/dev1"
+                android:layout_width="186dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorPrimary"
+                android:buttonTint="@color/colorPrimary"
+                android:text="Samsung A10s"/>
+
+            <CheckBox
+                android:id="@+id/dev2"
+                android:layout_width="177dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:buttonTint="@color/colorPrimary"
+                android:text="Samsung A20s"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/dev3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:buttonTint="@color/colorPrimary"
+                android:text="Samsung A30s"/>
+
+            <CheckBox
+                android:id="@+id/dev4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:buttonTint="@color/colorPrimary"
+                android:text="Samsung A40s"/>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check Out"
+        android:onClick="hasil"
+        android:textColor="@color/colorPrimary"
+        android:layout_margin="50dp"/>
+
+
+</LinearLayout>

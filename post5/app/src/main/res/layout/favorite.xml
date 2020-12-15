@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/as_bg">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="FAVORITE"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="45dp"
+        android:textColor="@color/colorPrimary"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:columnCount="2"
+        android:rowCount="3">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/anime"
+                android:layout_width="205dp"
+                android:layout_height="140dp"
+                android:src="@drawable/anime"
+                app:civ_border_color="#FF5722"
+                app:civ_border_width="2dp"
+                tools:ignore="MissingClass" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/Read"
+            android:layout_width="205dp"
+            android:layout_height="140dp"
+            android:src="@drawable/manga"
+            app:civ_border_color="#FF5722"
+            app:civ_border_width="2dp"
+            tools:ignore="MissingClass" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/cat"
+            android:layout_width="205dp"
+            android:layout_height="140dp"
+            android:src="@drawable/cat"
+            app:civ_border_color="#FF5722"
+            app:civ_border_width="2dp"
+            tools:ignore="MissingClass"
+            android:layout_marginTop="30dp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/duck"
+            android:layout_width="205dp"
+            android:layout_height="140dp"
+            android:src="@drawable/duck"
+            app:civ_border_color="#FF5722"
+            app:civ_border_width="2dp"
+            tools:ignore="MissingClass"
+            android:layout_marginTop="30dp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/satepadang"
+            android:layout_width="205dp"
+            android:layout_height="140dp"
+            android:src="@drawable/sate"
+            app:civ_border_color="#FF5722"
+            app:civ_border_width="2dp"
+            tools:ignore="MissingClass"
+            android:layout_marginTop="30dp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/coconut"
+            android:layout_width="205dp"
+            android:layout_height="140dp"
+            android:src="@drawable/coconut"
+            app:civ_border_color="#FF5722"
+            app:civ_border_width="2dp"
+            tools:ignore="MissingClass"
+            android:layout_marginTop="30dp"/>
+    </GridLayout>
+</LinearLayout>

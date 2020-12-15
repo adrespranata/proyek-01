@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/as_bg">
+
+        <TextView
+            android:id="@+id/volume"
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Volume"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"/>
+        <TextView
+            android:id="@+id/limas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Limas Segi Empat"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="362dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <EditText
+            android:id="@+id/panjang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="panjang"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColorHint="@color/colorPrimary"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@color/colorPrimary"/>
+
+        <EditText
+            android:id="@+id/lebar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="lebar"
+            android:textColorHint="@color/colorPrimary"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@color/colorPrimary"/>
+
+        <EditText
+            android:id="@+id/tinggi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="tinggi"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColorHint="@color/colorPrimary"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@color/colorPrimary"/>
+
+        <Button
+            android:id="@+id/hitung"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HITUNG"
+            android:backgroundTint="#DC611A15"
+            android:textColor="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/hasil"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Hasilnya Disini"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textColor="@color/colorPrimary"/>
+
+</LinearLayout>

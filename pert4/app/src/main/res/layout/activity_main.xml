@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cyber"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="SELAMAT DATANG" />
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:text="POSTTEST" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/yato"
+        app:civ_border_color="#fff"
+        app:civ_border_width="2dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="50dp"
+        android:layout_gravity="center"
+        tools:ignore="MissingClass" />
+
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:background="@drawable/form"
+        android:hint="Username"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:background="@drawable/form"
+        android:hint="Password"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:background="@drawable/form"
+        android:hint="Re-Password"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginBottom="15dp"
+        android:inputType="textPassword" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:buttonTint="@color/colorPrimaryDark"
+        android:textColor="#FFFFFF"
+        android:text="Setuju Syarat dan Ketentuan" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center">
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/form"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:textColor="#FFFFFF"
+        android:onClick="Login"
+        android:text="MASUK"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/Daftar"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/form"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:textColor="#FFFFFF"
+        android:onClick="Daftar"
+        android:text="DAFTAR"
+        tools:ignore="OnClick" />
+</LinearLayout>
+
+</LinearLayout>
